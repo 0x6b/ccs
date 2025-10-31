@@ -1,0 +1,18 @@
+[package]
+name = "ccs"
+version = "0.1.0"
+edition = "2024"
+description = "A Claude Code statusline tool that displays session information including model, directory, git status, token usage, and code changes."
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+git2 = "0.20"
+owo-colors = "4.2"
+anyhow = "1.0"
+
+# optimize for runtime performance
+[profile.release]
+lto = true
+codegen-units = 1
+panic = "abort"
