@@ -1,6 +1,6 @@
 [package]
 name = "ccs"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 description = "A Claude Code statusline tool that displays session information including model, directory, git status, token usage, and code changes."
 
